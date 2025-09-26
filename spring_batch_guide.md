@@ -104,3 +104,13 @@ Reader → Processor → Writer
 6. **Parallel/Partition**: song song & chia nhỏ dữ liệu.
 7. **Scheduler & Deploy**: hẹn giờ và triển khai batch.
 
+---
+
+## Nhiệm vụ chính của Spring Batch
+
+- **Quản lý batch job**: biết job nào chạy, chạy lúc nào, trạng thái ra sao.
+- **Tự sinh DB schema** (nếu bạn cho phép) để lưu lại trạng thái job/step/execution.
+- **Quản lý transaction**: rollback, commit theo chunk.
+- **Hỗ trợ error handling**: skip, retry, restart.
+- **Hỗ trợ parallel/partition** để xử lý dữ liệu lớn nhanh hơn.
+
